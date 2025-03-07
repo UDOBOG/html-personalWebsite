@@ -1,0 +1,276 @@
+body, html {
+    margin: 0;
+    position: relative;
+}
+
+.hero {
+    min-height: 80vh;
+    width: auto;
+    background-color: #2b315c;
+    position: relative;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+h1, p {
+    color: white;
+    font-family: "Big Shoulders Stencil Display", serif;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    z-index: 1;
+    -webkit-text-stroke: 1px black;
+}
+
+.title-text {
+    font-size: 3rem;
+    z-index: 1;
+}
+
+.subtitle-text {
+    font-size: 3rem;
+    text-align: center;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    min-height: 200vh;
+    height: auto;
+    width: auto;
+    margin: 20px;
+    position: relative;
+
+}
+
+.profile {
+    grid-column: span 2;
+    background-color: #2b315c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-photo {
+    height: 40vh;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 1;
+}
+
+.profile-text {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.biography {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b315c;
+    font-size: 2rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.bio-photo {
+    max-height: 170px;
+    height: auto;
+    background-color: #2b315c;
+    margin-top: 25px;
+}
+
+.cv {
+    background-color: #2b315c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.cv-photo {
+    max-height: 170px;
+    height: auto;
+    background-color: #2b315c;
+    margin-top: 25px;
+}
+
+.skills {
+    background-color: #2b315c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.skills-photo {
+    max-height: 170px;
+    height: auto;
+    background-color: #2b315c;
+    margin-top: 25px;
+}
+
+.hobbies {
+    background-color: #2b315c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.hobbies-photo {
+    max-height: 170px;
+    height: auto;
+    background-color: #2b315c;
+    margin-top: 25px;
+    border: solid white 2px;
+    border-bottom: 0;
+}
+
+.links {
+    grid-column: span 2;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.link-text {
+    -webkit-text-stroke: 0;
+}
+
+.icon {
+    max-width: 60px;
+    height: auto;
+}
+
+.icon-container {
+    background-color: #2b315c;
+    text-align: center;
+    padding: 15px;
+    width: 33vw;
+}
+
+.ink-pic {  
+    height: auto;
+    position: absolute;
+    z-index: 0;
+}
+
+#ink1 {
+    height: 55vh;
+    top: 0;
+    left: 10vw;
+    width: 30vw;
+}
+
+#ink2 {
+    height: 60vh;
+    width: auto;
+    right: 10vw;
+    top: 0;
+}
+
+#ink3 {
+    height: 60vh;
+    width: auto;
+    right: 3vw;
+    top: 30vh;
+}
+
+#ink4 {
+    height: 27vh;
+    width: auto;
+    left: 3vw;
+    top: 45vh;
+    transform: rotate(45deg);
+}
+
+#ink5 {
+    max-height: 75%;
+    height: 65vh;
+    width: auto;
+    max-width: 75%;
+    left: 4vw;
+    top: 10vh;
+    transform: rotate(330deg);
+}
+
+#ink6 {
+    height: 75vh;
+    width: auto;
+    right: 5vw;
+    top: 0vh;
+}
+
+footer {
+    background-color: #2b315c;
+    height: 5vh;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+
+.copyright {
+    font-family: sans-serif;
+    font-weight: lighter;
+    position: relative;
+    top: 2vh;
+    -webkit-text-stroke: 0;
+}
+
+@media (max-width: 700px) {
+
+    body {
+        height: auto;
+    }
+
+    .hero {
+    width: 100vw;
+    overflow: hidden;
+    }
+
+    .title-text {
+        font-size: 2rem;
+    }
+
+    .subtitle-text .profile-text {
+        font-size: 8px;
+    }
+
+    .grid-container {
+        gap: 0.5rem;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    footer {
+        position: relative;
+        bottom: 0;
+        margin: 0;
+    }
+}
